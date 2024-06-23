@@ -1,6 +1,6 @@
 # OLC Pixel Game Engine Mobile 2.2.8 for Xcode
 
-<p><b>Supports: Windows, Linux and Apple MAC</b></p>
+<p><b>Supports: Apple MAC, iOS, iPhone and iPad</b></p>
 <p><b>This project supports iOS devices SDK 13.5 --> 17.2 and beyond</b> <br/><br/></p>
 <hr/>
 <p><b><i>!!SHOUT OUTS!!</i></b><br/><br/>
