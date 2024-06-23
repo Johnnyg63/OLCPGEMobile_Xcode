@@ -57,13 +57,13 @@
     // Get the path to the file within your app bundle
     // NSString *filePath = [[NSBundle mainBundle] pathForResource:@"images/body3d" ofType:@"png"];
     NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
-    NSString *mainBundlePath = [[NSBundle mainBundle] bundlePath];
+    //NSString *mainBundlePath = [[NSBundle mainBundle] bundlePath];
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
     NSString *libraryDirectory = paths[0];
     
     NSArray *morepaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentDirectory = paths[0];
+    NSString *documentDirectory = morepaths[0];
     
     
     
@@ -92,9 +92,6 @@
     
     auto pConstruct = (IOSNativeApp::PGEConstruction)[app pIOSNativeApp]->structPGEConstruction;
     
-    //[app pIOSNativeApp]->pEventManager = &olc::EventManager::getInstance();
-    auto test = &olc::EventManager::getInstance();
-    //test->HandleCommand(55);
     // Setup up our OSEngine
     //mPGEMobile->pOsEngine.app = [app pIOSNativeApp];
     mPGEMobile->pOsEngine.screenWidth = (int32_t)widthInPixel;
@@ -146,21 +143,7 @@
     // 6: Lets start up or PGE Engine!!!
     mPGEMobile->Start();
     
-    // Read the content of the file
-    NSError *error;
-    
-    //NSData *fileContent = [NSData dataWithContentsOfFile:filePath options:NSDataReadingUncached error:&error];
-    
-    //NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
-    
-    //if(error)
-    //{
-    //    NSLog(@"Error reading file: %@", error.localizedDescription);
-    //}
-    //else
-    //{
-    //    NSLog(@"File Content: \n%@", fileContent);
-    //}
+
  
     
     
@@ -409,7 +392,7 @@ extern float _rotation;
 {
     for(UIPress *press in presses)
     {
-        mPGEMobile->olc_UpdateKeyState(press.key.keyCode, true);
+        mPGEMobile->olc_UpdateKeyState((int16_t)press.key.keyCode, true);
 
         
     }
@@ -419,7 +402,7 @@ extern float _rotation;
 {
     for(UIPress *press in presses)
     {
-        mPGEMobile->olc_UpdateKeyState(press.key.keyCode, true);
+        mPGEMobile->olc_UpdateKeyState((int16_t)press.key.keyCode, true);
 
         
     }
@@ -429,7 +412,7 @@ extern float _rotation;
 {
     for(UIPress *press in presses)
     {
-        mPGEMobile->olc_UpdateKeyState(press.key.keyCode, false);
+        mPGEMobile->olc_UpdateKeyState((int16_t)press.key.keyCode, false);
 
     }
 }
@@ -438,7 +421,7 @@ extern float _rotation;
 {
     for(UIPress *press in presses)
     {
-        mPGEMobile->olc_UpdateKeyState(press.key.keyCode, false);
+        mPGEMobile->olc_UpdateKeyState((int16_t)press.key.keyCode, false);
 
         
     }

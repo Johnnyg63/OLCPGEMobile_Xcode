@@ -171,7 +171,7 @@ public:
         }
 
         sampleAFullPath = (std::string)app_GetInternalAppStorage() + "/sounds/SampleA.wav";
-        olc::rcode result = olc::filehandler->ExtractFileFromAssets("sounds/SampleA.wav", sampleAFullPath);
+        olc::filehandler->ExtractFileFromAssets("sounds/SampleA.wav", sampleAFullPath);
 
 #endif
 
