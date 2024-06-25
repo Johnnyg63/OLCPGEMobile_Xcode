@@ -1,7 +1,36 @@
 # OLC Pixel Game Engine Mobile 2.2.8 for Xcode
 
 <p><b>Supports: Apple MAC, iOS, iPhone and iPad</b></p>
-<p><b>This project supports iOS devices SDK 13.5 --> 17.2 and beyond</b> <br/><br/></p>
+<p>
+	<b>This project supports iOS devices SDK 13.5 --> 17.2 and beyond</b> <br/><br/>
+	The <b><i>OLC Pixel Game Engine Mobile Edition </i></b>is a feature-rich fork of the original <a href='https://github.com/OneLoneCoder/olcPixelGameEngine'> OLC Pixel Game Engine</a>. <br/>
+	<ul>
+		<li>
+			<b>Community Interest:</b><br/>
+   			The mobile edition has garnered attention from programmers who want to create games for Android and iOS platforms.<br/>
+      			It’s actively maintained and developed by contributors.
+		</li>
+  		<li>
+			<b>Cross-Platform Support:</b><br/>
+   			The mobile edition extends the original engine to support Android and iOS.<br/>
+      			Developers can create games that run on both desktop and mobile devices.
+		</li>
+  		<li>
+			<b>Extensions and Features:</b><br/>
+   			The mobile edition includes additional features like mobile input handling, sound, and hardware interfaces.<br/>
+      			The mobile edition is built on SIMD/NEON advance vectorizations to ensure the fastest engine to pixel generation.<br/>
+      			It’s a versatile tool for prototyping, education, mobile game development and algorithm visualization for both Android and iOS devices.
+		</li>
+		<li>
+			<b>Growing User Base:</b><br/>
+   			While not as widely known as the original, it’s steadily gaining popularity.<br/>
+      			Developers appreciate its simplicity and flexibility.
+		</li>
+  	</ul><br/>
+   <i>Remember that both versions—original and mobile—are valuable tools for game development and learning. If you’re interested in mobile game development, give the mobile edition a try! 🚀🎮</i>
+
+</p>
+
 <hr/>
 <p><b><i>!!SHOUT OUTS!!</i></b><br/><br/>
  	<b><i>THANK YOU</i></b> to <a href='https://github.com/vitoralmeidasilva'>@VasCoder</a> without your testing this would not have been possible!<br/>
@@ -11,9 +40,6 @@
 
 </p>
 <hr/>
-
-
-
 <p><img src='https://github.com/Johnnyg63/OLCPGEMobile_Xcode/assets/96908304/6545fc21-d300-42d2-99ea-428980669fd4' /></p>
 <hr/>
 <p>For Visual Studio All In One (Android and iOS) Project Template: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio">OLC Pixel Game Engine Mobile 2.2.8 Visual Studio for Android and iOS</a></i></p>
