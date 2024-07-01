@@ -1,8 +1,19 @@
 # OLC Pixel Game Engine Mobile 2.2.8 for Xcode
 
-<p><b>Supports: Apple MAC, iOS, iPhone and iPad</b></p>
 <p>
-	<b>This project supports iOS devices SDK 13.5 --> 17.2 and beyond</b> <br/><br/>
+	<b>Supports: Apple MAC, iOS, iPhone and iPad</b><br/>
+ 	<b>This project supports iOS devices SDK 13.5 --> 17.2 and beyond</b>
+
+</p>
+
+<hr/>
+<p>For Visual Studio All In One (Android and iOS) Project Template: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio">OLC Pixel Game Engine Mobile 2.2.8 Visual Studio for Android and iOS</a></i></p>
+<p>For Visual Studio Android Only (Windows) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio_Android">OLC Pixel Game Engine Mobile 2.2.8 for Android Visual Studio</a></i></p>
+<p>For Android Studio (Windows/Linux/MAC) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobile_AndroidStudio">OLC Pixel Game Engine Mobile 2.2.8 for Android Studio</a></i></p>
+<p>For Xcode (MAC) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobile_Xcode">OLC Pixel Game Engine Mobile 2.2.8 for Xcode</a></i></p>
+<hr/>
+
+<p>
 	The <b><i>OLC Pixel Game Engine Mobile Edition </i></b>is a feature-rich fork of the original <a href='https://github.com/OneLoneCoder/olcPixelGameEngine'> OLC Pixel Game Engine</a>. <br/>
 	<ul>
 		<li>
@@ -41,11 +52,7 @@
 </p>
 <hr/>
 <p><img src='https://github.com/Johnnyg63/OLCPGEMobile_Xcode/assets/96908304/6545fc21-d300-42d2-99ea-428980669fd4' /></p>
-<hr/>
-<p>For Visual Studio All In One (Android and iOS) Project Template: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio">OLC Pixel Game Engine Mobile 2.2.8 Visual Studio for Android and iOS</a></i></p>
-<p>For Visual Studio Android Only (Windows) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio_Android">OLC Pixel Game Engine Mobile 2.2.8 for Android Visual Studio</a></i></p>
-<p>For Android Studio (Windows/Linux/MAC) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobile_AndroidStudio">OLC Pixel Game Engine Mobile 2.2.8 for Android Studio</a></i></p>
-<p>For Xcode (MAC) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobile_Xcode">OLC Pixel Game Engine Mobile 2.2.8 for Xcode</a></i></p>
+
 <hr/>
 
 
