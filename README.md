@@ -1,4 +1,9 @@
-# OLC Pixel Game Engine Mobile 2.2.8 for Xcode
+# OLC Pixel Game Engine Mobile 2.2.9 for Xcode
+
+<p>
+	<b>Now with Lightweight 3D Support</b><br/>
+	<b>See <a href="https://github.com/Johnnyg63/PGEMob3DMountains_AS/">3D Demo Here</a></b>
+</p>
 
 <p>
 	<b>Supports: Apple MAC, iOS, iPhone and iPad</b><br/>
@@ -10,10 +15,10 @@
 <p><b>What our users say:</b><br>
 <i>"The main advantages of PGE mobile compared to many other tools are its flexibility with C++, low footprint (the generated APK is truly small), and performance. It’s genuinely the only accessible, easy-to-use mobile programming toolkit in C++ with an expressive and straightforward API (and a genuinely helpful community)."</i></p>
 <hr/>
-<p>For Visual Studio All In One (Android and iOS) Project Template: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio">OLC Pixel Game Engine Mobile 2.2.8 Visual Studio for Android and iOS</a></i></p>
-<p>For Visual Studio Android Only (Windows) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio_Android">OLC Pixel Game Engine Mobile 2.2.8 for Android Visual Studio</a></i></p>
-<p>For Android Studio (Windows/Linux/MAC) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobile_AndroidStudio">OLC Pixel Game Engine Mobile 2.2.8 for Android Studio</a></i></p>
-<p>For Xcode (MAC) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobile_Xcode">OLC Pixel Game Engine Mobile 2.2.8 for Xcode</a></i></p>
+<p>For Visual Studio All In One (Android and iOS) Project Template: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio">OLC Pixel Game Engine Mobile 2.2.9 Visual Studio for Android and iOS</a></i></p>
+<p>For Visual Studio Android Only (Windows) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobileVisualStudio_Android">OLC Pixel Game Engine Mobile 2.2.9 for Android Visual Studio</a></i></p>
+<p>For Android Studio (Windows/Linux/MAC) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobile_AndroidStudio">OLC Pixel Game Engine Mobile 2.2.9 for Android Studio</a></i></p>
+<p>For Xcode (MAC) Use this project: <a href="https://github.com/Johnnyg63/OLCPGEMobile_Xcode">OLC Pixel Game Engine Mobile 2.2.9 for Xcode</a></i></p>
 <hr/>
 
 <p>
@@ -123,4 +128,17 @@
   <li>2.26 Updated olc_Configure to set OGLES_20 to use SDK 26->33. A big thanks you to @VasCoder for all his testing!!!!</li>
   <li>2.27 Removed mutexTouchPoints from main engine thread, the engine will run as fast as possible now!!! </li>
   <li>2.28 Correct onUserDestroy so that it is not called every frame. A Big thank you to <a href='https://github.com/baderouaich/'>@baderouaich</a>. <br/>Added OnLowMemoryWarning() </li>
+  <li>2.29: Brought olc::v_2d inline with other sources <br>
+ 	      Hardware 3D Rendering & Efficient Keyboard Interrogation <br>
+		  +HW3D_Projection() - Sets a hardware projection matrix for 3D rendering <br>
+		  +HW3D_EnableDepthTest - Sets whether 3D rendered objects should be depth tested <br>
+		  +HW3D_SetCullMode - Sets which faces of a 3D rendered model are visible <br>
+		  +HW3D_DrawObject - Draw a 3D mesh using hardware <br>
+		  +HW3D_DrawLine - Draw a 3D line using hardware <br>
+		  +HW3D_DrawLineBox	- Draw a 3D box using hardware <br>
+		  +adv_FlushLayerGPUTasks - [ADVANCED] Prematurely drain GPUTasks for immediate buffer update <br>
+		  Added polylines as drawable decal	structures <br>
+		  Updated Geometry2D to support non-segment line intersections <br>
+		  +olcUTIL_Hardware3D.h file v1.01 <br>
+		  NOTICE OF DEPRECATION! olc::DecalInstance is to be removed and replaced by olc::GPUTask </li>
 </ul>
