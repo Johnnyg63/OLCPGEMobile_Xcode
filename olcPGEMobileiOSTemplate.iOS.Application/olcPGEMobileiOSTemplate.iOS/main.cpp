@@ -1,9 +1,9 @@
 //////////////////////////////////////////////////////////////////
-// Pixel Game Engine Mobile Release 2.2.8,                      //
-// John Galvin aka Johnngy63: 09-May-2024                       //
-// Now with iOS Support                                         //
+// Pixel Game Engine Mobile Release 2.2.9,                      //
+// John Galvin aka Johnngy63: 15-Jun-2025                       //
+// New Lightweight 3d Support. iOS sensors not supported yet    //
 // Please report all bugs to https://discord.com/invite/WhwHUMV //
-// Or on Github: https://github.com/Johnnyg63					//
+// Or on Github: https://github.com/Johnnyg63                    //
 //////////////////////////////////////////////////////////////////
 
 // Set up headers for the different platforms
@@ -185,13 +185,13 @@ public:
         return true;
     }
 
-    // <summary>
+    /// <summary>
     /// Draws a Target Pointer at the center position of Center Point
     /// </summary>
     /// <param name="vCenterPoint">Center Position of the target</param>
-    /// <param name="nLineLenght">Length of lines</param>
-    /// <param name="nCircleRadus">Center Circle radius</param>
-    void DrawTargetPointer(olc::vi2d vCenterPoint, int32_t nLineLenght, int32_t nCircleRadus, olc::Pixel p = olc::WHITE)
+    /// <param name="nLineLength">Length of lines</param>
+    /// <param name="nCircleRadius">Center Circle radius</param>
+    void DrawTargetPointer(olc::vi2d vCenterPoint, int32_t nLineLength, int32_t nCircleRadius, olc::Pixel p = olc::WHITE)
     {
         /*
                         |
@@ -202,12 +202,12 @@ public:
 
 
         */
-        FillCircle(vCenterPoint, nCircleRadus, p);
-        DrawLine(vCenterPoint, { vCenterPoint.x, vCenterPoint.y + nLineLenght }, p);
-        DrawLine(vCenterPoint, { vCenterPoint.x, vCenterPoint.y - nLineLenght }, p);
-        DrawLine(vCenterPoint, { vCenterPoint.x + nLineLenght, vCenterPoint.y }, p);
-        DrawLine(vCenterPoint, { vCenterPoint.x - nLineLenght, vCenterPoint.y }, p);
-
+        FillCircle(vCenterPoint, nCircleRadius, p);
+        DrawLine(vCenterPoint, { vCenterPoint.x, vCenterPoint.y + nLineLength }, p);
+        DrawLine(vCenterPoint, { vCenterPoint.x, vCenterPoint.y - nLineLength }, p);
+        DrawLine(vCenterPoint, {vCenterPoint.x + nLineLength, vCenterPoint.y }, p);
+        DrawLine(vCenterPoint, {vCenterPoint.x - nLineLength, vCenterPoint.y }, p);
+ 
     }
 
     bool OnUserUpdate(float fElapsedTime) override {
@@ -223,10 +223,10 @@ public:
         std::string sMessage = "OneLoneCoder.com";
         vecMessages.push_back(sMessage);
 
-        sMessage = "PGE Mobile Release 2.2.8";
+        sMessage = "PGE Mobile Release 2.2.9";
         vecMessages.push_back(sMessage);
 
-        sMessage = "Now With iOS Support";
+        sMessage = "Now With 3D Support";
         vecMessages.push_back(sMessage);
 
         sMessage = "NOTE: Android FPS = CPU FPS, iOS = GPU FPS";
